@@ -25,7 +25,7 @@ class JUnit5ExampleTest {
 		chromeOptions.setHeadless(true);
 		WebDriver driver = new ChromeDriver(chromeOptions);
 		System.out.println("Completing Assignment 5");
-		driver.get("http://13.233.172.4:3001/");
+		driver.get("http://13.233.89.115:3001/");
 		String x = driver.getTitle();
 	    System.out.println(x);
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
@@ -46,7 +46,7 @@ class JUnit5ExampleTest {
 		chromeOptions.setHeadless(true);
 		WebDriver driver = new ChromeDriver(chromeOptions);
 		System.out.println("Completing Assignment 5");
-		driver.get("http://13.233.172.4:3001/");
+		driver.get("http://13.233.89.115:3001/");
 		String x = driver.getTitle();
 	    System.out.println(x);
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
