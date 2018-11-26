@@ -18,8 +18,8 @@ class JUnit5ExampleTest {
     @Test
     public void testAppSuccess()
     {
-    	System.setProperty("webdriver.chrome.driver", "C:\\vijay\\Training\\edureka\\Assignments\\Assignment.5\\chromedriver.exe");
-    	//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+    	//System.setProperty("webdriver.chrome.driver", "C:\\vijay\\Training\\edureka\\Assignments\\Assignment.5\\chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
     		
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setHeadless(true);
@@ -41,8 +41,8 @@ class JUnit5ExampleTest {
     @Test
     public void testAppFail()
     {
-    	System.setProperty("webdriver.chrome.driver", "C:\\vijay\\Training\\edureka\\Assignments\\Assignment.5\\chromedriver.exe");
-		//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+    	//System.setProperty("webdriver.chrome.driver", "C:\\vijay\\Training\\edureka\\Assignments\\Assignment.5\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setHeadless(true);
 		WebDriver driver = new ChromeDriver(chromeOptions);
