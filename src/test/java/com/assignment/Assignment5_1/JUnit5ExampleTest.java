@@ -24,7 +24,7 @@ class JUnit5ExampleTest {
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setHeadless(true);
 		WebDriver driver = new ChromeDriver(chromeOptions);
-		System.out.println("Completing Assignment 5");
+		System.out.println("Starting Test Case-1- Success Scenario");
 		driver.get("http://13.233.89.115:3001/");
 		String x = driver.getTitle();
 	    System.out.println(x);
@@ -34,6 +34,7 @@ class JUnit5ExampleTest {
 		driver.findElement(By.name("click")).click(); 
 		System.out.println(driver.findElement(By.name("hello")).getText());
 		Assert.assertTrue(driver.findElement(By.name("hello")).getText().contains("Login Succeeded"));
+		System.out.println("Completed Test Case-1- Success Scenario");
 		driver.quit();
     }
     
@@ -45,7 +46,7 @@ class JUnit5ExampleTest {
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setHeadless(true);
 		WebDriver driver = new ChromeDriver(chromeOptions);
-		System.out.println("Completing Assignment 5");
+		System.out.println("Starting Test Case-2- Success Scenario");
 		driver.get("http://13.233.89.115:3001/");
 		String x = driver.getTitle();
 	    System.out.println(x);
@@ -55,6 +56,7 @@ class JUnit5ExampleTest {
 		driver.findElement(By.name("click")).click(); 
 		System.out.println(driver.findElement(By.name("hello")).getText());
 		Assert.assertTrue(driver.findElement(By.name("hello")).getText().contains("Login Failed!"));
+		System.out.println("Completed Test Case-2- Success Scenario");
 		driver.quit();
     }
 }
